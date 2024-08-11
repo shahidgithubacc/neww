@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive cards layout</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .training-section {
+            width: 100%;
+            background: url("white-simple-textured-design-background.jpg");
+            background-size: cover;
+
+        }
+
+        .training-section h1 {
+            text-align: center;
+            padding: 25px 0px 0px 0px;
+            font-family: sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 1170px;
+            margin: auto;
+        }
+
+        .card {
+            /* how flex-basis: works; */
+            flex-basis: 23%;
+            box-shadow: 0px 0px 10px 3px lightgrey;
+            margin: 10px 0px;
+            border-radius: 12px;
+            background-color: white;
+            padding: 20px 20px;
+            text-align: center;
+        }
+
+        .container h3 {
+            padding: 10px 0px;
+        }
+
+        .container p {
+            padding: 10px;
+        }
+
+        .container button {
+            background-color: rgb(86, 86, 218);
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .container button:hover {
+            background-color: blue;
+            font-size: 12px;
+        }
+
+        .card:hover {
+            background-color: rgb(161, 161, 214);
+            color: white;
+        }
+
+        .img-div {
+            height: 150px;
+            text-align: center;
+            background-color: #e3dbdb;
+        }
+
+        .img-div img {
+            height: 130px;
+            margin: 12px 0px;
+            border-radius: 50%;
+        }
+
+
+
+        /* media quries */
+
+        @media only screen and (min-width:300px) and (max-width:900px) {
+            .container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img-div">
+        <img src="logo2.jpg" alt="">
+    </div>
+    <div class="training-section">
+        <h1>traning section</h1>
+        <div class="container">
+            <div class="card card1"><img src="python img.svg" alt="py img" height="150px">
+                <h3>pythin web ddevelopment</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, repellendus qui. In harum,
+                    quaerat sit animi, temporibus eius suscipit perspiciatis voluptatibus voluptates magnam vel. Placeat
+                    unde fugit natus alias nisi?</p>
+                <button>read more</button>
+            </div>
+
+            <div class="card card2"><img src="android img.jpeg" alt="py img" height="150px">
+                <h3>android development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, repellendus qui. In harum,
+                    quaerat sit animi, temporibus eius suscipit perspiciatis voluptatibus voluptates magnam vel. Placeat
+                    unde fugit natus alias nisi?</p>
+                <button>read more</button>
+            </div>
+
+            <div class="card card3"><img src="ethical hacking img.png" alt="" height="150px">
+                <h3>ethical hacking</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, repellendus qui. In harum,
+                    quaerat sit animi, temporibus eius suscipit perspiciatis voluptatibus voluptates magnam vel. Placeat
+                    unde fugit natus alias nisi?</p>
+                <button>read more</button>
+            </div>
+
+            <div class="card card4"><img src="c lang img.png" alt="py img" height="150px">
+                <h3>pythin web ddevelopment</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, repellendus qui. In harum,
+                    quaerat sit animi, temporibus eius suscipit perspiciatis voluptatibus voluptates magnam vel. Placeat
+                    unde fugit natus alias nisi?</p>
+                <button>read more</button>
+            </div>
+
+            <div class="card card5"><img src="ruby img.png" alt="py img" height="150px">
+                <h3>pythin web ddevelopment</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, repellendus qui. In harum,
+                    quaerat sit animi, temporibus eius suscipit perspiciatis voluptatibus voluptates magnam vel. Placeat
+                    unde fugit natus alias nisi?</p>
+                <button>read more</button>
+            </div>
+
+            <div class="card card6"><img src="java img.png" alt="py img" height="150px">
+                <h3>pythin web ddevelopment</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, repellendus qui. In harum,
+                    quaerat sit animi, temporibus eius suscipit perspiciatis voluptatibus voluptates magnam vel. Placeat
+                    unde fugit natus alias nisi?</p>
+                <button>read more</button>
+            </div>
+
+            <div class="card card7"><img src="sql img.png" alt="py img" height="150px">
+                <h3>pythin web ddevelopment</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, repellendus qui. In harum,
+                    quaerat sit animi, temporibus eius suscipit perspiciatis voluptatibus voluptates magnam vel. Placeat
+                    unde fugit natus alias nisi?</p>
+                <button>read more</button>
+            </div>
+
+            <div class="card card8"><img src="android img.jpeg" alt="py img" height="150px">
+                <h3>pythin web ddevelopment</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, repellendus qui. In harum,
+                    quaerat sit animi, temporibus eius suscipit perspiciatis voluptatibus voluptates magnam vel. Placeat
+                    unde fugit natus alias nisi?</p>
+                <button>read more</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
